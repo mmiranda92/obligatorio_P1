@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="obligatorio.js"></script>
+    <script src="clasesObligatorio.js"></script>
+    <link rel="stylesheet" href="obligatorio.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cabezal" class="clearfix">
+          <img id="logo" src="https://develotion.com/assets/img/logo.jpg" alt="logo">
+          <ul id="navPrincipal">
+            <li>
+              <a>Iniciar Sesión</a>
+            </li>
+            <li>
+              <a>Registrarse</a>
+            </li>
+            <li>
+              <a>Menú principal</a>
+            </li>
+            <li>
+              <a>Cerrar Sesión</a>
+            </li>
+      
+          </ul>
+          <div id="aux">
+            <a>Menú alt. 1</a> | <a>Menú alt. 2</a>
+          </div><!-- FIN AUX -->
+        </div><!-- FIN CABEZAL -->
+        <div id="contenido">
+            <div id="login">
+                <h3>Iniciar Sesión</h3>
+                <label for="txtNombreUs">Nombre de Usuario:</label><br>
+                <input type="text" id="txtNombreUs"><br>
+                <label for="txtPassword">Contraseña:</label><br>
+                <input type="password" id="txtPassword"><br>
+                <input type="button" value="Ingresar" id="btnLogin"><br>
+            </div>
+            <div id="registro">
+                <label for="text">Seleccione tipo de Usuario</label><br>
+                <select name="tipoUsuario" id="selectUs">
+                    <option value="docente">Docente</option>
+                    <option value="alumno">Alumno</option>
+                </select><br>
+                <input type="button" value="Siguiente" id="btnSelectUs"><br>
+            </div>
+            <div id="registroDocente">
+                <h3>Registrarse como Docente</h3> 
+                <label for="txtNombreDocente">Nombre</label><br>
+                <input type="text" id="txtNombreDocente"><br>
+                <label for="txtNombreUsDocente">Nombre de Usuario:</label><br>
+                <input type="text" id="txtNombreUsDocente"><br>
+                <label for="txtPasswordDocente">Contraseña:</label><br>
+                <input type="password" id="txtPasswordDocente"><br>
+                <input type="button" value="Registrarse" id="btnRegistroDocente"><br>
+                <p id="mensajeRegistro"></p>
+            </div>
+            <div id="registroAlumno">
+                <h3>Registrarse como Alumno</h3>
+                <label for="text">Seleccionar Docente:</label><br>
+                <select name="tipoDocente" id="selectDocente">br
+                    <option value="docente">Docente 1</option>
+                    <option value="docente">Docente 2</option>
+                    <option value="docente">Docente 3</option>
+                    <option value="docente">Docente 4</option>
+                </select><br>
+                <label for="txtNombreAlumno">Nombre</label><br>
+                <input type="text" id="txtNombreAlumno"><br>
+                <label for="txtNombreUsAlumno">Nombre de Usuario:</label><br>
+                <input type="text" id="txtNombreUsAlumno"><br>
+                <label for="txtPasswordAlumno">Contraseña:</label><br>
+                <input type="password" id="txtPasswordAlumno"><br>
+                <input type="button" value="Registrarse" id="btnRegistroAlumno"><br>
+            </div>
+
+          <hr><!-- Separador -->
+          <div class="ejercicios">
+            <div>
+              <h2>Ejercicio 1</h2>
+              <img src="https://develotion.com/assets/img/ej1.png">
+              <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis, dignissim augue.</p>
+              <input type="button" value="Hacer entrega">
+            </div>
+            <hr>
+            <div>
+              <h2>Ejercicio 4</h2>
+              <img src="https://develotion.com/assets/img/ej1.png">
+              <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis, dignissim augue.</p>
+              <input type="button" value="Hacer entrega">
+            </div>
+          </div>
+            <!--FIN EJERCICIOS-->
+          </div><!-- FIN CONTENIDO -->
+          <div id="pie">
+            <a href="https://www.ort.edu.uy">Footer</a>
+          </div><!-- FIN PIE -->
+    </div><!-- FIN CONTENEDOR -->
+</body>
+</html>
