@@ -120,4 +120,4 @@ function validarClave(clave){
         }
     }
     return res;
-}// preguntar a la profe por la validacion sino sale manana. besitos */
+}// preguntar a la profe por la validacion sino sale manana. besitos jkljlklkj */
