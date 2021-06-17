@@ -1,19 +1,29 @@
 window.addEventListener("load", inicio);
 function inicio(){
-    ///document.querySelector("#btnIngresar").addEventListener("click", iniciarSesion);
+    document.querySelector("#btnIngresar").addEventListener("click", iniciarSesion);
     //document.querySelector("#btnSelectUs").addEventListener("click", registro);
     //document.querySelector("#btnRegistroAlumno").addEventListener("click", registrarAlumno);
     document.querySelector("#btnRegistroDocente").addEventListener("click", registrarDocente);
 
 }
 
-/*function iniciarSesion(){
+function iniciarSesion(){
     let nomUsuario = document.querySelector("#txtNombreUs").value;
     let password = document.querySelector("#txtPassword").value;
 
+    let login = verificarInicioDeSesion(nomUsuario, password);
+    let mensaje = "";
+    if(login){
+        mensaje = "Inicio de sesion exitoso";
+    }else{
+        mensaje = "Usuario y/o contraseña incorrecta";
+    }
+    
+    document.querySelector("#mensajeInicioDeSesion").innerHTML = mensaje;
+
 }
 
-function registro(){
+/*function registro(){
     let selectUs = document.querySelector("#selectUs").value;
 }
 
@@ -62,7 +72,17 @@ function registrarDocente(){
 ///////// LOGICA //////////
 let listaUsuarios = [];
 
-
+function verificarInicioDeSesion(nombreUs, clave){
+    let res = false;
+    for(let i = 0; i < listaUsuarios.length; i++){
+        
+            let usuario = listaUsuarios[i];
+            if(usuario.nombreUsuario == nombreUs && usuario.password == clave){
+            res = true
+        }
+    }
+    return res;
+}
 
 function usuarioRepetido(nombreUsuario){
     let res = true;
