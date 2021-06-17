@@ -75,7 +75,7 @@ let listaUsuarios = [];
 function verificarInicioDeSesion(nombreUs, clave){
     let res = false;
     for(let i = 0; i < listaUsuarios.length; i++){
-        
+
             let usuario = listaUsuarios[i];
             if(usuario.nombreUsuario == nombreUs && usuario.password == clave){
             res = true
